@@ -1,4 +1,4 @@
-
+#komentarz zadanie 6
 
 import java.math.BigDecimal;
 import java.time.LocalTime;
@@ -12,7 +12,7 @@ public class Drink extends Product{
     public Product applyRating(Rating newRating) {
         return new Drink(getId(), getName(),getPrice(),newRating);
     }
-
+#druga zmiana
     @Override
     public BigDecimal getDiscount() {
         if ( LocalTime.now().isBefore(LocalTime.of(17,30)) && LocalTime.now().isAfter(LocalTime.of(17,30))){
@@ -24,4 +24,4 @@ public class Drink extends Product{
 
     }
 }
-#zmmiana 2
+#trzecia zmiana
